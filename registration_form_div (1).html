@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>REGISTRATION FORM</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="fun.js"></script>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body   bgcolor="#f5e5d6"  >
+     
+      
+     <center> <h1 >
+        <u>REGISTRATION FORM </u></center>
+      </h1>
+      <form name="register" autocomplete="off" onsubmit="return registration()" action="sumbitpage" method="POST" enctype="multipart/form-data" >
+         <!-----------First Name--------------->
+         <div>
+            <label>FIRST NAME : </label>
+            <input type="text" name="txtFname"/><br>
+         </div>
+         <!--------------Last Name---------------->    
+         <div>
+         <label>LAST NAME : </label>
+         <input type="text" name="txtLname" /><br>
+         <!-------------father's name------------------------>
+         <div>
+            <label>FATHER's NAME : </label>
+            <input type="text" name="txtFaname"  /><br>
+         </div>
+         <!-------------mother's name------------------------>
+         <div><label>MOTHER's NAME : </label>
+            <input type="text" name="txtMoname"  /><br>
+         </div>
+         <!-------------email------------------------>
+         <div>
+            <label>EMAIL : </label>
+            <input type="text" id="email"  name="txtEmail"/><br>
+         </div>
+         <!-------------file upload------------------------>
+         <div>
+            <label>UPLOAD YOUR PIC : </label>
+            <input type="file" name="filePic" value="choose file"/><br>
+         </div>
+         <!-------------user name------------------------>
+         <div>
+            <label>USER NAME : </label>
+            <input type="text" id="txtUname"  name="txtUname"/><br>
+         </div>
+         <!-------------password------------------------>
+         <div>
+            <label>PASSWORD : </label>
+            <input type="password"  placeholder="Password *" id="txtPassword" name="txtPassword"/><br>
+         </div>
+         <!-------------confirm password------------------------>
+         <div>
+            <label>RETYPE PASSWORD : </label>
+            <input type="password" placeholder="Retype Password *" name="txtRpassword"/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <br>
+         </div>
+         <!---------------Phone number text box---------->   
+         <div> 
+            <label>MOBILE NUMBER :  </label>
+            <input type="text" name="txtCode" placeholder="+91" size="3"/>
+            <input type="text" name="txtPhone" /><br>  
+         </div>
+         <!-------------gender------------------------>
+         <div>  <label>GENDER :</label>
+            <input type="radio" name="gender"/>Male
+            <input type="radio" name="gender"/>Female
+            <input type="radio" name="gender"/>Other<br>
+         </div>
+         <!-----------------Address textarea----------> 
+         <div>		
+            <label>ADDRESS : </label>
+            <textarea name="address" cols="60" rows="10"></textarea>
+            <br><br>
+         </div>
+         <!-----------select Country- ----------->		
+         <div>
+            <label>COUNTRY : </label>
+            <select name="selectCountry">
+               <option value="">--select--</option>
+               <option value="1">India</option>
+               <option value="2">Qatar</option>
+               <option value="3">U.K</option>
+            </select>
+            <br><br>
+         </div>
+         <!-----------select state----------->
+         <div>
+            <label>STATE : </label>
+            <select id="state" name="selState">
+               <option value="select" selected>--Select--</option>
+               <option value="Andhra Pradesh">Andhra Pradesh</option>
+               <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+               <option value="Assam">Assam</option>
+               <option value="Bihar">Bihar</option>
+               <option value="Chhattisgarh">Chhattisgarh</option>
+               <option value="Goa">Goa</option>
+               <option value="Gujarat">Gujarat</option>
+               <option value="Haryana">Haryana</option>
+               <option value="Himachal Pradesh">Himachal Pradesh</option>
+               <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+               <option value="Jharkhand">Jharkhand</option>
+               <option value="Karnataka">Karnataka</option>
+               <option value="Kerala">Kerala</option>
+            </select>
+         </div>
+         <!-----------hobbies ----------->		
+         <div>   <label>SELECT YOUR HOBBIES : </label>
+            <input type="checkbox" name="h1"/>Reading
+            <input type="checkbox" name="h2"/>Writing
+            <input type="checkbox" name="h3"/>Singing<br><br>  
+            <input type="submit"  name="btnSubmit" value="SUBMIT"/>
+            <input type="submit" name="btnReset" value="RESET"/>
+         </div>
+      </form>
+   </body>
+</html>
